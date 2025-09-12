@@ -1,14 +1,18 @@
-import Hero from "@/components/Hero";
-import LandingContent from "@/components/Landing";
+import About from "@/components/home/About";
+import Hero from "@/components/home/Hero";
+import Portfolio from "@/components/home/Portfolio";
+import Services from "@/components/home/Services";
 import React from "react";
 
-const page = () => {
+const home = () => {
   return (
     <div>
       <Hero />
-      <LandingContent />
+      <About />
+      <Services />
+      <Portfolio />
     </div>
   );
 };
 
-export default page;
+export default home;
