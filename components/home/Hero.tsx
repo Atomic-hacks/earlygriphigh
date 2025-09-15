@@ -190,13 +190,17 @@ export default function Hero() {
         {/* Dynamic Overlay - Enhanced for mobile */}
         <div
           ref={overlayRef}
-          className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/70 z-5"
+          className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-50"
           style={{ willChange: "opacity" }}
         />
 
+        <div className="absolute inset-0 bg-black/50"/>
+
+       
+
         {/* Mobile Layout - Stacked Vertically */}
         <div className="absolute inset-0 z-10 md:hidden">
-          <div className="flex flex-col h-full justify-between px-4 py-8 safe-area-insets">
+          <div className="flex flex-col h-full justify-between px-4 py-24 safe-area-insets">
             {/* Company Name - Top */}
             <div
               ref={companyRef}
@@ -274,11 +278,11 @@ export default function Hero() {
             {/* Buttons - Bottom */}
             <div
               ref={buttonsRef}
-              className="flex flex-col gap-3 px-2 pb-4"
+              className="flex flex-col items-center gap-3 px-2 pb-4"
               style={{ willChange: "transform" }}
             >
               <button
-                className="group px-6 py-4 bg-blue-900 text-white font-medium text-sm hover:bg-blue-700 transition-all duration-300 active:scale-95 shadow-lg touch-manipulation"
+                className="group flex px-4 py-4 w-fit bg-blue-900 text-white font-medium text-sm hover:bg-blue-700 transition-all duration-300 active:scale-95 shadow-lg touch-manipulation items-center justify-center"
                 style={{
                   fontWeight: "500",
                   letterSpacing: "0.05em",
@@ -291,7 +295,7 @@ export default function Hero() {
               </button>
 
               <button
-                className="group px-6 py-4 border border-white/40 text-white/90 font-light text-sm hover:bg-white/5 hover:border-white/60 transition-all duration-300 active:scale-95 backdrop-blur-sm touch-manipulation"
+                className="group w-fit flex px-4 py-4 border border-white/40 text-white/90 font-light text-sm hover:bg-white/5 hover:border-white/60 transition-all duration-300 active:scale-95 backdrop-blur-sm touch-manipulation justify-center"
                 style={{
                   fontWeight: "300",
                   letterSpacing: "0.05em",
@@ -385,7 +389,7 @@ export default function Hero() {
               style={{ willChange: "transform" }}
             >
               <button
-                className="group px-8 py-3 bg-blue-600 text-white font-medium text-base hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="group px-4 py-3 bg-blue-600 text-white font-medium text-base hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 style={{
                   fontWeight: "500",
                   letterSpacing: "0.05em",
@@ -397,7 +401,7 @@ export default function Hero() {
               </button>
 
               <button
-                className="group px-8 py-3 border border-white/30 text-white/90 font-light text-base hover:bg-white/5 hover:border-white/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                className="group px-4 py-3 border border-white/30 text-white/90 font-light text-base hover:bg-white/5 hover:border-white/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                 style={{
                   fontWeight: "300",
                   letterSpacing: "0.05em",

@@ -26,7 +26,7 @@ const projects: Project[] = [
     description:
       "Modern, comfortable bedrooms within our vertical boarding structure, designed to create a warm and friendly atmosphere for our female students.",
     location: "Main Campus",
-    status: "available",
+    status: "as seen",
     image: "/girls-dorm.jpg",
     icon: Home,
     gradient: "from-slate-900 via-blue-900 to-black",
@@ -40,7 +40,7 @@ const projects: Project[] = [
     description:
       "Spacious and comfortable accommodation within our vertical boarding structure, providing a vibrant atmosphere that promotes friendship and academic excellence.",
     location: "Main Campus",
-    status: "available",
+    status: "as seen",
     image: "/boys-dorm.jpg",
     icon: Building,
     gradient: "from-gray-900 via-slate-800 to-black",
@@ -54,7 +54,7 @@ const projects: Project[] = [
     description:
       "Two beautifully designed common rooms equipped with comfortable sofas, large screen TV, and DVD player, creating the perfect environment for relaxation and socializing.",
     location: "Both Houses",
-    status: "available",
+    status: "as seen",
     image: "/common-room.jpg",
     icon: Users,
     gradient: "from-blue-950 via-slate-900 to-black",
@@ -68,7 +68,7 @@ const projects: Project[] = [
     description:
       "State-of-the-art entertainment facilities featuring the latest audio-visual equipment for both educational and recreational purposes.",
     location: "Central Building",
-    status: "available",
+    status: "as seen",
     image: "/media-center.jpg",
     icon: Hotel,
     gradient: "from-indigo-950 via-gray-900 to-black",
@@ -82,7 +82,7 @@ const projects: Project[] = [
     description:
       "Quiet, well-lit study areas designed to promote focused learning and academic achievement for all our boarding students.",
     location: "Both Houses",
-    status: "available",
+    status: "as seen",
     image: "/study-area.jpg",
     icon: BookOpen,
     gradient: "from-slate-950 via-blue-900 to-black",
@@ -96,7 +96,7 @@ const projects: Project[] = [
     description:
       "Modern dining facilities and kitchenette areas where students can enjoy meals together and prepare light snacks in a communal setting.",
     location: "Ground Floor",
-    status: "available",
+    status: "as seen",
     image: "/dining-area.jpg",
     icon: Wrench,
     gradient: "from-gray-950 via-slate-800 to-black",

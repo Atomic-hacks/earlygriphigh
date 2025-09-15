@@ -122,15 +122,15 @@ const ContactPage = () => {
             <div className="text-center space-y-8">
               {/* Decorative accent */}
               <div className="flex items-center justify-center space-x-4">
-                <div className="w-12 h-px bg-gradient-to-r from-blue-600 to-blue-700"></div>
+                <div className="w-12 h-px bg-gradient-to-r from-blue-800 to-blue-700"></div>
                 <span className="text-sm font-medium text-blue-700 tracking-[0.15em] uppercase">
                   Get In Touch
                 </span>
-                <div className="w-12 h-px bg-gradient-to-r from-blue-700 to-blue-600"></div>
+                <div className="w-12 h-px bg-gradient-to-r from-blue-700 to-blue-800"></div>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin leading-[0.9] tracking-tight">
-                <span className="inline-block bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent">
+                <span className="inline-block bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 bg-clip-text text-transparent">
                   Contact Us
                 </span>
               </h1>
@@ -142,7 +142,7 @@ const ContactPage = () => {
                 programs.
               </p>
 
-              <div className="w-32 h-0.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 mx-auto" />
+              <div className="w-32 h-0.5 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-700 mx-auto" />
             </div>
           </div>
         </div>
@@ -157,9 +157,9 @@ const ContactPage = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-8 h-8 relative">
-                    <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-blue-600 to-blue-700 transform -translate-y-1/2"></div>
-                    <div className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-blue-600 to-blue-700 transform -translate-x-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-blue-800 to-blue-700 transform -translate-y-1/2"></div>
+                    <div className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-blue-800 to-blue-700 transform -translate-x-1/2"></div>
+                    <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-blue-800 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-light text-gray-900 tracking-tight">
                     Send Us A Message
@@ -182,7 +182,7 @@ const ContactPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                      <User className="w-4 h-4 text-blue-600" />
+                      <User className="w-4 h-4 text-blue-800" />
                       <span>Full Name *</span>
                     </label>
                     <input
@@ -198,7 +198,7 @@ const ContactPage = () => {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                      <Mail className="w-4 h-4 text-blue-600" />
+                      <Mail className="w-4 h-4 text-blue-800" />
                       <span>Email Address *</span>
                     </label>
                     <input
@@ -216,7 +216,7 @@ const ContactPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                      <Phone className="w-4 h-4 text-blue-600" />
+                      <Phone className="w-4 h-4 text-blue-800" />
                       <span>Phone Number</span>
                     </label>
                     <input
@@ -231,7 +231,7 @@ const ContactPage = () => {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                      <BookOpen className="w-4 h-4 text-blue-600" />
+                      <BookOpen className="w-4 h-4 text-blue-800" />
                       <span>Inquiry Type *</span>
                     </label>
                     <select
@@ -275,7 +275,7 @@ const ContactPage = () => {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                      <Calendar className="w-4 h-4 text-blue-600" />
+                      <Calendar className="w-4 h-4 text-blue-800" />
                       <span>Preferred Contact Method</span>
                     </label>
                     <select
@@ -295,7 +295,7 @@ const ContactPage = () => {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-900 flex items-center space-x-2">
-                    <MessageSquare className="w-4 h-4 text-blue-600" />
+                    <MessageSquare className="w-4 h-4 text-blue-800" />
                     <span>Message *</span>
                   </label>
                   <textarea
@@ -313,7 +313,7 @@ const ContactPage = () => {
                   <button
                     onClick={handleSubmit}
                     type="submit"
-                    className="group relative w-full md:w-auto px-8 py-4 bg-blue-600 text-white font-light text-lg hover:bg-blue-700 transition-all duration-500 overflow-hidden"
+                    className="group relative w-full md:w-auto px-8 py-4 bg-blue-800 text-white font-light text-lg hover:bg-blue-700 transition-all duration-500 overflow-hidden"
                   >
                     <div className="absolute inset-0 bg-blue-700 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>
                     <span className="relative z-10 flex items-center justify-center space-x-3">
@@ -330,9 +330,9 @@ const ContactPage = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-8 h-8 relative">
-                    <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-blue-600 to-blue-700 transform -translate-y-1/2"></div>
-                    <div className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-blue-600 to-blue-700 transform -translate-x-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-blue-800 to-blue-700 transform -translate-y-1/2"></div>
+                    <div className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-blue-800 to-blue-700 transform -translate-x-1/2"></div>
+                    <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-blue-800 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-light text-gray-900 tracking-tight">
                     Contact Information
@@ -344,7 +344,7 @@ const ContactPage = () => {
                 {/* Phone Numbers */}
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100/50 rounded-full flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-blue-600" />
+                    <Phone className="w-5 h-5 text-blue-800" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-medium text-gray-900">
@@ -361,7 +361,7 @@ const ContactPage = () => {
                 {/* Email */}
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100/50 rounded-full flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-blue-600" />
+                    <Mail className="w-5 h-5 text-blue-800" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-medium text-gray-900">
@@ -376,7 +376,7 @@ const ContactPage = () => {
                 {/* Location */}
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100/50 rounded-full flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <MapPin className="w-5 h-5 text-blue-800" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-medium text-gray-900">
@@ -397,7 +397,7 @@ const ContactPage = () => {
                 {/* Working Hours */}
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100/50 rounded-full flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-blue-600" />
+                    <Clock className="w-5 h-5 text-blue-800" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-medium text-gray-900">
@@ -422,8 +422,8 @@ const ContactPage = () => {
                     Schedule a visit or call us to learn more about our academic
                     programs and admission process.
                   </p>
-                  <button className="group relative px-6 py-3 bg-transparent border border-blue-600/30 text-blue-600 font-light hover:border-blue-600 transition-all duration-500 overflow-hidden">
-                    <div className="absolute inset-0 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>
+                  <button className="group relative px-6 py-3 bg-transparent border border-blue-800/30 text-blue-800 font-light hover:border-blue-800 transition-all duration-500 overflow-hidden">
+                    <div className="absolute inset-0 bg-blue-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>
                     <span className="relative z-10 group-hover:text-white transition-colors duration-700 flex items-center space-x-2">
                       <span>Schedule a Visit</span>
                       <ArrowUpRight className="w-4 h-4" />

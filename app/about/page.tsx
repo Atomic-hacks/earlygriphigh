@@ -9,10 +9,10 @@ const page = () => {
     <main>
       <div className="sticky top-0">
         <ArchitectureHero
-          descriptionHeader="Broad Vision. Exceptional Service. Lasting Value."
+          descriptionHeader="Broad Vision. Exceptional Learning. Lasting Impact"
           title="About"
-          description="Our mission,both then and now is to consistently deliver high-quality projects on time, while upholding the highest standards of professionalism, integrity, and client satisfaction."
-          backgroundImage="/house3.jpg"
+          description="Our mission, both then and now, is to provide quality education while upholding the highest standards of integrity, professionalism, and student success."
+          backgroundImage="/26.jpg"
           titleId="hero-title"
           descriptionId="hero-description"
         />

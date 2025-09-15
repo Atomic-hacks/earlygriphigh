@@ -7,10 +7,10 @@ const page = () => {
     <div>
       <div className="sticky top-0">
         <ArchitectureHero
-          descriptionHeader="Let’s Build Something Remarkable Together"
+          descriptionHeader="Let’s build a solid foundation for the next generation"
           title="Contact Us"
-          description="Have a vision in mind or simply want to learn more about what we do? We're here to listen, collaborate, and create. Reach out to Spark House to start a conversation — whether it's a new project, a partnership, or a simple inquiry, we’re ready when you are."
-          backgroundImage="/house9.jpg"
+          description="Need to make an enquiry or simply want to know more about EarlyGriphHigh school..? follow the form below to contact and we will respond adequately as soon as we can."
+          backgroundImage="/23.jpg"
           titleId="hero-title"
           descriptionId="hero-description"
         />

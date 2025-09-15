@@ -38,17 +38,15 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group relative overflow-hidden bg-blue-800 text-white px-8 py-3 text-sm uppercase tracking-wide">
+            <div className="flex flex-col items-center sm:flex-row gap-4">
+              <button className="group relative overflow-hidden rounded w-fit bg-blue-800 text-white px-8 py-3 text-sm uppercase tracking-wide">
                 <span className="relative z-10">Join Us</span>
-                <div className="absolute inset-0 bg-blue-900 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
               </button>
 
-              <button className="group relative overflow-hidden text-blue-800 px-8 py-3 text-sm uppercase tracking-wide border border-blue-300">
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+              <button className="group relative overflow-hidden rounded hover:bg-blue-100 transiti duration-300 w-fit text-blue-800 px-8 py-3 text-sm uppercase tracking-wide border border-blue-300">
+                <span className="relative z-10 transition-colors duration-300">
                   Learn More
                 </span>
-                <div className="absolute inset-0 bg-blue-800 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
               </button>
             </div>
           </div>
@@ -58,7 +56,7 @@ const Contact = () => {
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="/house2.jpg"
+                src="/29.jpg"
                 alt="house2"
               />
 

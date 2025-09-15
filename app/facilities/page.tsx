@@ -7,10 +7,10 @@ const page = () => {
     <div>
       <div className="sticky top-0">
         <ArchitectureHero
-          descriptionHeader="Our work Speaks for itself"
-          title="Projects"
-          description="At Spark House, we bring visionary ideas to life through innovative design, precision craftsmanship, and a commitment to excellence. Explore a curated selection of our past and ongoing projects — each one a reflection of our passion for quality, functionality, and timeless architectural impact."
-          backgroundImage="/house8.jpg"
+          descriptionHeader="Our Facilities Speaks for themselves"
+          title="Facilities"
+          description="At Eargrip High School, we provide more than just classrooms — we offer an environment designed for growth, creativity, and excellence. Our state-of-the-art facilities support learning, sports, technology, and the arts, giving students the space and tools to thrive. Explore our well-curated facilities, each one built to inspire achievement and nurture potential."
+          backgroundImage="/26.jpg"
           titleId="hero-title"
           descriptionId="hero-description"
         />

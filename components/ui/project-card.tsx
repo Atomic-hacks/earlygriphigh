@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div
-      className={`group relative transform transition-all duration-1500 ease-out ${
+      className={`group relative transform transition-all rounded duration-1500 ease-out ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-24 opacity-0"
       } ${className}`}
       onMouseEnter={() => onHover?.(project.id)}
@@ -93,8 +93,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
               {/* Floating Status Badge */}
               <div className="absolute top-6 left-6 z-20">
-                <div className="flex items-center space-x-2 bg-black/70 backdrop-blur-lg rounded-lg px-4 py-2 border border-blue-400/30">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
+                <div className="flex items-center space-x-2 bg-black/70 backdrop-blur-lg rounded-lg px-4 py-2 border border-blue-600/30">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                   <span className="text-xs font-medium text-blue-300 uppercase tracking-wider">
                     {project.status}
                   </span>
@@ -162,14 +162,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           {/* Location */}
           <div className="flex items-center space-x-3 text-gray-600">
-            <MapPin className="w-4 h-4 text-blue-400" />
+            <MapPin className="w-4 h-4 text-blue-600" />
             <span className="text-sm font-light">{project.location}</span>
           </div>
 
           {/* Premium CTA */}
           <div className="pt-4">
-            <button className="group relative px-8 py-3 bg-transparent border border-blue-600/30 text-blue-600 font-light text-base hover:border-blue-600 transition-all duration-500 overflow-hidden">
-              <div className="absolute inset-0 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>
+            <button className="group relative px-8 py-3 bg-transparent border rounded border-blue-600/30 text-blue-600 font-light text-base hover:border-blue-600 transition-all duration-500 overflow-hidden">
+              <div className="absolute inset-0 bg-blue-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>
               <span
                 className="relative z-10 group-hover:text-white transition-colors duration-700"
                 style={{

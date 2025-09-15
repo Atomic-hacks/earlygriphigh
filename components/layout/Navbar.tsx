@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
           isScrolled
-            ? "bg-neutral-800/25 backdrop-blur-xl shadow-lg shadow-blue-500/5 border-b border-blue-500/10"
+            ? "bg-neutral-800/25 backdrop-blur-xl "
             : "bg-transparent"
         }`}
       >
@@ -63,14 +63,14 @@ export default function Navbar() {
                 <div className="flex flex-col">
                   <span
                     className={`text-xl lg:text-2xl font-light tracking-tight transition-colors duration-500 ${
-                      isScrolled ? "text-blue-800" : "text-white"
+                      isScrolled ? "text-blue-400" : "text-white"
                     }`}
                   >
                    EarlyGripHigh
                   </span>
                   <span
                     className={`text-lg font-light tracking-wider transition-colors duration-500 ${
-                      isScrolled ? "text-blue-800" : "text-white/80"
+                      isScrolled ? "text-blue-400" : "text-white/80"
                     }`}
                   >
                    School
@@ -102,8 +102,8 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`lg:hidden relative p-3 rounded-lg transition-all duration-500 ${
                 isScrolled
-                  ? "text-blue-800 hover:bg-blue-50"
-                  : "text-white hover:bg-white/10"
+                  ? "text-blue-800"
+                  : "text-white "
               }`}
             >
               <div className="flex flex-col space-y-1.5 w-6">
@@ -139,7 +139,7 @@ export default function Navbar() {
         }`}
       >
         {/* Background with subtle gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/95 via-blue-700/95 to-blue-800/95 backdrop-blur-xl"></div>
+        <div className="absolute inset-0 bg-blue-900/80 backdrop-blur-xl"/>
 
         {/* Floating geometric elements */}
         <div className="absolute inset-0 overflow-hidden opacity-10">
