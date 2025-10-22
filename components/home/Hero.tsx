@@ -34,7 +34,7 @@ export default function Hero() {
 
     window.addEventListener("resize", checkMobile);
     window.addEventListener("orientationchange", () => {
-      setTimeout(checkMobile, 100); // Delay to get accurate dimensions after orientation change
+      setTimeout(checkMobile, 100); 
     });
 
     return () => {
@@ -51,7 +51,7 @@ export default function Hero() {
     const heroHeight = heroRef.current.offsetHeight;
     const scrollProgress = Math.min(scrolled / (heroHeight * 0.8), 1);
 
-    // Reduce parallax intensity on mobile for better performance
+   
     const parallaxIntensity = isMobile ? 0.6 : 1;
 
     // Background parallax - reduced on mobile
@@ -60,7 +60,7 @@ export default function Hero() {
       const backgroundScale = 1 + scrollProgress * 0.1 * parallaxIntensity;
       backgroundRef.current.style.transform = `translate3d(0, ${backgroundMove}px, 0) scale(${backgroundScale})`;
 
-      // Lighter effects on mobile to preserve performance
+      
       const blurAmount = scrollProgress * (isMobile ? 4 : 8);
       const brightness = 1 - scrollProgress * 0.3;
       backgroundRef.current.style.filter = `blur(${blurAmount}px) brightness(${brightness})`;
@@ -115,7 +115,7 @@ export default function Hero() {
   useEffect(() => {
     if (!mounted) return;
 
-    // Use passive listeners and requestAnimationFrame for smooth performance
+    
     let rafId: number;
     const optimizedHandler = () => {
       if (rafId) {
@@ -124,7 +124,7 @@ export default function Hero() {
       rafId = requestAnimationFrame(handleScroll);
     };
 
-    // Add scroll listener with passive flag for better mobile performance
+    
     window.addEventListener("scroll", optimizedHandler, {
       passive: true,
       capture: false,
@@ -164,7 +164,7 @@ export default function Hero() {
           perspective: "1000px",
         }}
       >
-        {/* Background Layer with Optimized Parallax */}
+        {/* Background Layer with Parallax */}
         <div
           ref={backgroundRef}
           className="absolute inset-0"
@@ -187,7 +187,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Dynamic Overlay - Enhanced for mobile */}
+        {/* Dynamic Overlay */}
         <div
           ref={overlayRef}
           className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-50"
@@ -322,7 +322,7 @@ export default function Hero() {
             }}
           >
             <h1
-              className="text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-extralight text-white tracking-tighter leading-none"
+              className="text-6xl lg:text-8xl font-extralight text-white tracking-tighter leading-none"
               style={{
                 fontWeight: "200",
                 textShadow: "0 4px 20px rgba(0,0,0,0.3)",

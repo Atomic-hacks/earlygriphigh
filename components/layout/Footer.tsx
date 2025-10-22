@@ -6,7 +6,6 @@ import {
   Phone,
   Mail,
   Facebook,
-  Twitter,
   Linkedin,
   Instagram,
   BookOpen,
@@ -14,6 +13,8 @@ import {
   Users,
   Trophy,
 } from "lucide-react";
+
+
 
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null);
@@ -52,7 +53,6 @@ export default function Footer() {
           }}
         />
       </div>
-
       {/* Floating Academic Elements */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         {[...Array(8)].map((_, i) => (
@@ -163,19 +163,25 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex space-x-4">
               {[
-                { icon: Facebook, name: "Facebook" },
-                { icon: Twitter, name: "Twitter" },
-                { icon: Linkedin, name: "LinkedIn" },
-                { icon: Instagram, name: "Instagram" },
+                { icon: Facebook, name: "Facebook", link: "" },
+                { icon: Linkedin, name: "LinkedIn", link: "" },
+                {
+                  icon: Instagram,
+                  name: "Instagram",
+                  link: "https://www.instagram.com/earlygriphighschool",
+                },
               ].map((social) => (
                 <a
                   key={social.name}
                   href="#"
-                  className="group p-3 bg-white/5 border border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-800 backdrop-blur-sm"
+                  className="group p-3 bg-white/5 border border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 backdrop-blur-sm"
                 >
                   <social.icon className="w-4 h-4 group-hover:text-blue-600 transition-colors duration-600" />
                 </a>
               ))}
+              <div className="p-3 bg-white/5 border border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 backdrop-blur-sm flex">
+                <img src="/whatsapp.svg" alt="whatsapp" className="size-4" />
+              </div>
             </div>
           </div>
 
@@ -313,7 +319,7 @@ export default function Footer() {
                   href="tel:+234"
                   className="text-white/70 hover:text-blue-600 transition-colors duration-600 font-light"
                 >
-                  +234 (0) 000 000 000
+                  +234 707 932 3077
                 </a>
               </div>
 
@@ -332,7 +338,7 @@ export default function Footer() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <button className="group rounded relative px-8 py-3 bg-white/5 border border-white/20 text-white/80 font-light text-base hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-800 overflow-hidden w-full backdrop-blur-sm">
+              <button className="group rounded relative px-8 py-3 bg-white/5 border border-white/20 text-white/80 font-light text-base hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 overflow-hidden w-full backdrop-blur-sm">
                 <span
                   className="relative z-10 group-hover:text-blue-200 transition-colors duration-600"
                   style={{ fontWeight: "600", letterSpacing: "0.02em" }}
