@@ -1,8 +1,7 @@
 import ContactPage from "@/components/contact/Contact";
 import ArchitectureHero from "@/components/ui/other-hero";
-import React from "react";
 
-const page = () => {
+const ContactPageRoute = () => {
   return (
     <div>
       <div className="sticky top-0">
@@ -20,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPageRoute;

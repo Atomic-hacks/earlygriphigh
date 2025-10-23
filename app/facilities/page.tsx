@@ -1,8 +1,7 @@
 import Projects from "@/components/projects/Proj";
 import ArchitectureHero from "@/components/ui/other-hero";
-import React from "react";
 
-const page = () => {
+const FacilitiesPage = () => {
   return (
     <div>
       <div className="sticky top-0">
@@ -20,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default FacilitiesPage;

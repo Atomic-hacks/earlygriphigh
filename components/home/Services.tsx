@@ -97,13 +97,12 @@ const cardVariants: Variants = {
   },
 };
 
-const FacilityCard = ({
-  facility,
-  index,
-}: {
+interface FacilityCardProps {
   facility: any;
   index: number;
-}) => {
+}
+
+const FacilityCard = ({ facility, index }: FacilityCardProps) => {
   const IconComponent = facility.icon;
 
   return (
@@ -170,7 +169,7 @@ const FacilityCard = ({
           className={`flex items-center text-${facility.accentColor} text-sm font-medium mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
           whileHover={{ x: 2 }}
         >
-          <Link href='/facilities'>Explore facility</Link>
+          <Link href="/facilities">Explore facility</Link>
         </motion.div>
       </div>
     </motion.div>

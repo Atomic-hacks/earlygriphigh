@@ -240,7 +240,7 @@ const Gallery: React.FC = () => {
 
     document.addEventListener("keydown", handleKeyPress);
     return () => document.removeEventListener("keydown", handleKeyPress);
-  }, [selectedImage]);
+  }, [selectedImage, navigateImage]);
 
   return (
     <section className="relative py-16 sm:py-20 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
@@ -258,7 +258,7 @@ const Gallery: React.FC = () => {
 
       {/* Subtle grid pattern overlay */}
       <div
-        className="absolute inset-0 z-0 opacity-3"
+        className="absolute inset-0 z-0 opacity-30"
         style={{
           backgroundImage: `
             linear-gradient(rgba(30, 58, 138, 0.08) 1px, transparent 1px),
@@ -285,7 +285,7 @@ const Gallery: React.FC = () => {
               }`}
             >
               <div
-                className={`bg-gradient-to-r from-blue-800 to-blue-900 h-px transition-all duration-800 delay-400 ${
+                className={`bg-gradient-to-r from-blue-800 to-blue-900 h-px transition-all duration-300 delay-400 ${
                   isVisible ? "w-12" : "w-0"
                 }`}
               />
@@ -299,7 +299,7 @@ const Gallery: React.FC = () => {
             </div>
 
             <h1
-              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] tracking-tight mb-8 transition-all duration-800 delay-300 ${
+              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] tracking-tight mb-8 transition-all duration-300 delay-300 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
@@ -313,13 +313,13 @@ const Gallery: React.FC = () => {
             </h1>
 
             <div
-              className={`bg-gradient-to-r from-blue-800 to-blue-900 h-1 transition-all duration-800 delay-800 ${
+              className={`bg-gradient-to-r from-blue-800 to-blue-900 h-1 transition-all duration-300 delay-800 ${
                 isVisible ? "w-16" : "w-0"
               }`}
             />
 
             <p
-              className={`text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed font-light max-w-3xl mt-8 transition-all duration-800 delay-500 ${
+              className={`text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed font-light max-w-3xl mt-8 transition-all duration-300 delay-500 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
@@ -334,7 +334,7 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div
-          className={`mb-12 transition-all duration-800 delay-700 ${
+          className={`mb-12 transition-all duration-300 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -370,7 +370,7 @@ const Gallery: React.FC = () => {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className={`group relative overflow-hidden rounded cursor-pointer transition-all duration-700 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl delay-${900 + index * 100} ${
+              className={`group relative overflow-hidden rounded cursor-pointer transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl delay-${900 + index * 100} ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-12"
@@ -390,7 +390,7 @@ const Gallery: React.FC = () => {
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110"
                 />
 
                 {/* Overlay */}
@@ -466,7 +466,7 @@ const Gallery: React.FC = () => {
           <div className="text-center space-y-6">
             <div className="flex items-center justify-center space-x-8">
               <div
-                className={`bg-gradient-to-r from-transparent via-blue-800 to-transparent h-px transition-all duration-800 delay-2200 ${
+                className={`bg-gradient-to-r from-transparent via-blue-800 to-transparent h-px transition-all duration-300 delay-2200 ${
                   isVisible ? "w-16" : "w-0"
                 }`}
               />
@@ -476,7 +476,7 @@ const Gallery: React.FC = () => {
                 }`}
               />
               <div
-                className={`bg-gradient-to-r from-transparent via-blue-800 to-transparent h-px transition-all duration-800 delay-2600 ${
+                className={`bg-gradient-to-r from-transparent via-blue-800 to-transparent h-px transition-all duration-300 delay-2600 ${
                   isVisible ? "w-16" : "w-0"
                 }`}
               />

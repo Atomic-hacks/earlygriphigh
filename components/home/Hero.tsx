@@ -34,7 +34,7 @@ export default function Hero() {
 
     window.addEventListener("resize", checkMobile);
     window.addEventListener("orientationchange", () => {
-      setTimeout(checkMobile, 100); 
+      setTimeout(checkMobile, 100);
     });
 
     return () => {
@@ -51,7 +51,6 @@ export default function Hero() {
     const heroHeight = heroRef.current.offsetHeight;
     const scrollProgress = Math.min(scrolled / (heroHeight * 0.8), 1);
 
-   
     const parallaxIntensity = isMobile ? 0.6 : 1;
 
     // Background parallax - reduced on mobile
@@ -60,7 +59,6 @@ export default function Hero() {
       const backgroundScale = 1 + scrollProgress * 0.1 * parallaxIntensity;
       backgroundRef.current.style.transform = `translate3d(0, ${backgroundMove}px, 0) scale(${backgroundScale})`;
 
-      
       const blurAmount = scrollProgress * (isMobile ? 4 : 8);
       const brightness = 1 - scrollProgress * 0.3;
       backgroundRef.current.style.filter = `blur(${blurAmount}px) brightness(${brightness})`;
@@ -115,7 +113,6 @@ export default function Hero() {
   useEffect(() => {
     if (!mounted) return;
 
-    
     let rafId: number;
     const optimizedHandler = () => {
       if (rafId) {
@@ -124,7 +121,6 @@ export default function Hero() {
       rafId = requestAnimationFrame(handleScroll);
     };
 
-    
     window.addEventListener("scroll", optimizedHandler, {
       passive: true,
       capture: false,
@@ -194,9 +190,7 @@ export default function Hero() {
           style={{ willChange: "opacity" }}
         />
 
-        <div className="absolute inset-0 bg-black/50"/>
-
-       
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* Mobile Layout - Stacked Vertically */}
         <div className="absolute inset-0 z-10 md:hidden">

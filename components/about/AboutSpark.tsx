@@ -75,7 +75,7 @@ const OurStory: React.FC<OurStoryProps> = ({
             <div className="relative">
               {/* Blue accent border */}
               <div
-                className={`absolute -left-4 top-0 w-1 bg-gradient-to-b from-blue-700 to-blue-800 800 transition-all duration-1000 delay-300 ${
+                className={`absolute -left-4 top-0 w-1 bg-gradient-to-b from-blue-700 to-blue-800 transition-all duration-1000 delay-300 ${
                   isVisible ? "h-full opacity-100" : "h-0 opacity-0"
                 }`}
               />
@@ -85,21 +85,21 @@ const OurStory: React.FC<OurStoryProps> = ({
                 <img
                   src={image}
                   alt="EarlyGrip High School"
-                  className={`w-full h-[800 800px] object-cover transition-all duration-700 ${
+                  className={`w-full h-[800px] object-cover transition-all duration-300 ${
                     isVisible ? "grayscale-0 scale-100" : "grayscale scale-110"
                   } hover:grayscale-0`}
                 />
 
                 {/* Image overlay */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br from-black/30 via-blue-900/20 to-black/50 transition-opacity duration-800 delay-700 ${
+                  className={`absolute inset-0 bg-gradient-to-br from-black/30 via-blue-900/20 to-black/50 transition-opacity duration-300 delay-700 ${
                     isVisible ? "opacity-100" : "opacity-0"
                   }`}
                 />
 
                 {/* School info overlay */}
                 <div
-                  className={`absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md rounded p-4 border border-white/20 transition-all duration-800 delay-1000 hover:scale-105 hover:-translate-y-1 ${
+                  className={`absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md rounded p-4 border border-white/20 transition-all duration-300 delay-1000 hover:scale-105 hover:-translate-y-1 ${
                     isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-8"
@@ -119,17 +119,17 @@ const OurStory: React.FC<OurStoryProps> = ({
 
               {/* Decorative corner element */}
               <div
-                className={`absolute -top-4 -right-4 w-8 h-8 transition-all duration-800 delay-1200 ${
+                className={`absolute -top-4 -right-4 w-8 h-8 transition-all duration-300 delay-1200 ${
                   isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
                 }`}
               >
                 <div
-                  className={`w-full h-1 bg-gradient-to-r from-blue-700 to-blue-800 mb-2 transition-all duration-800 delay-1700 ${
+                  className={`w-full h-1 bg-gradient-to-r from-blue-700 to-blue-800 mb-2 transition-all duration-300 delay-1700 ${
                     isVisible ? "w-full" : "w-0"
                   }`}
                 />
                 <div
-                  className={`w-1 bg-gradient-to-b from-blue-700 to-blue-800 transition-all duration-800 delay-1800 800 ${
+                  className={`w-1 bg-gradient-to-b from-blue-700 to-blue-800 transition-all duration-300 delay-1800 800 ${
                     isVisible ? "h-full" : "h-0"
                   }`}
                 />
@@ -148,19 +148,19 @@ const OurStory: React.FC<OurStoryProps> = ({
             {/* Section Header */}
             <div className="space-y-6">
               <div
-                className={`flex items-center space-x-4 transition-all duration-800 800 delay-200 ${
+                className={`flex items-center space-x-4 transition-all duration-300 delay-200 ${
                   isVisible
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-8"
                 }`}
               >
                 <div
-                  className={`bg-gradient-to-r from-blue-700 to-blue-800 h-px transition-all duration-800 delay-700 ${
+                  className={`bg-gradient-to-r from-blue-700 to-blue-800 h-px transition-all duration-300 delay-700 ${
                     isVisible ? "w-12" : "w-0"
                   }`}
                 />
                 <span
-                  className={`text-sm font-medium text-blue-700 tracking-[0.15em] uppercase transition-opacity duration-800 800 delay-800 800 ${
+                  className={`text-sm font-medium text-blue-700 tracking-[0.15em] uppercase transition-opacity duration-300 delay-800 ${
                     isVisible ? "opacity-100" : "opacity-0"
                   }`}
                 >
@@ -169,7 +169,7 @@ const OurStory: React.FC<OurStoryProps> = ({
               </div>
 
               <h2
-                className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight transition-all duration-800 delay-300 ${
+                className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight transition-all duration-300 delay-300 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
@@ -181,7 +181,7 @@ const OurStory: React.FC<OurStoryProps> = ({
               </h2>
 
               <div
-                className={`bg-gradient-to-r from-blue-700 to-blue-800 h-1 transition-all duration-800 delay-800 ${
+                className={`bg-gradient-to-r from-blue-700 to-blue-800 h-1 transition-all duration-300 delay-800 ${
                   isVisible ? "w-16" : "w-0"
                 }`}
               />
@@ -190,7 +190,7 @@ const OurStory: React.FC<OurStoryProps> = ({
             {/* Description */}
             <div className="space-y-6">
               <p
-                className={`text-lg md:text-xl leading-relaxed font-light bg-gradient-to-r from-neutral-900 via-blue-800 to-neutral-900 bg-clip-text text-transparent transition-all duration-800 delay-700 ${
+                className={`text-lg md:text-xl leading-relaxed font-light bg-gradient-to-r from-neutral-900 via-blue-800 to-neutral-900 bg-clip-text text-transparent transition-all duration-300 delay-700 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
@@ -201,7 +201,7 @@ const OurStory: React.FC<OurStoryProps> = ({
 
               {/* Additional school info */}
               <div
-                className={`bg-blue-50/50 rounded p-6 border-l-4 border-blue-700 hover:translate-x-2 hover:border-l-8 transition-all duration-300 delay-800 800 ${
+                className={`bg-blue-50/50 rounded p-6 border-l-4 border-blue-700 hover:translate-x-2 hover:border-l-8 transition-all duration-300 delay-800 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
@@ -219,7 +219,7 @@ const OurStory: React.FC<OurStoryProps> = ({
 
             {/* What Sets Us Apart */}
             <div
-              className={`space-y-6 transition-all duration-800 delay-700 ${
+              className={`space-y-6 transition-all duration-300 delay-700 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
@@ -257,13 +257,13 @@ const OurStory: React.FC<OurStoryProps> = ({
 
             {/* Additional Features */}
             <div
-              className={`space-y-4 transition-all duration-800 delay-1000 ${
+              className={`space-y-4 transition-all duration-300 delay-1000 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
               }`}
             >
-              <h4 className="text-lg font-medium text-blue-800 800">
+              <h4 className="text-lg font-medium text-blue-800">
                 Our Educational Approach
               </h4>
               <div className="space-y-3">
@@ -306,13 +306,13 @@ const OurStory: React.FC<OurStoryProps> = ({
 
             {/* Call to Action */}
             <div
-              className={`pt-6 transition-all duration-800 delay-1700 ${
+              className={`pt-6 transition-all duration-300 delay-1700 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
               }`}
             >
-              <div className="bg-gradient-to-r from-blue-800 800 to-blue-800 rounded p-6 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-gradient-to-r from-blue-800 to-blue-800 rounded p-6 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300">
                 <h4 className="text-lg font-semibold mb-2">
                   Ready to Join Our Family?
                 </h4>
@@ -335,7 +335,7 @@ const OurStory: React.FC<OurStoryProps> = ({
             >
               <div className="flex items-center space-x-4">
                 <div
-                  className={`bg-gradient-to-r from-blue-700 to-blue-800 h-px transition-all duration-800 delay-1700 ${
+                  className={`bg-gradient-to-r from-blue-700 to-blue-800 h-px transition-all duration-300 delay-1700 ${
                     isVisible ? "w-8" : "w-0"
                   }`}
                 />
@@ -345,7 +345,7 @@ const OurStory: React.FC<OurStoryProps> = ({
                   }`}
                 />
                 <div
-                  className={`bg-gradient-to-r from-blue-800 to-blue-800 800 h-px transition-all duration-800 delay-2100 ${
+                  className={`bg-gradient-to-r from-blue-800 to-blue-800 h-px transition-all duration-300 delay-2100 ${
                     isVisible ? "w-12" : "w-0"
                   }`}
                 />

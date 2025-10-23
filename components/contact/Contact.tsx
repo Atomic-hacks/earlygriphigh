@@ -32,7 +32,11 @@ const ContactPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleInputChange = (e: { target: { name: any; value: any } }) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -40,7 +44,7 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Handle form submission here

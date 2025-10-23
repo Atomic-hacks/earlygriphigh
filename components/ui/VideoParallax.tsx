@@ -35,8 +35,6 @@ export const VideoParallax = ({
   // Text moves slightly faster than background for depth
   const textY = useTransform(scrollY, [0, 2000], [0, -40]);
 
-  // Subtle overlay that barely changes
-
   return (
     <div className={cn("relative w-full h-screen overflow-hidden", className)}>
       {/* Video/Image Layer with transforms */}

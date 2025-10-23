@@ -211,8 +211,9 @@ const Facilities: React.FC = () => {
           <div className="w-32 h-0.5 bg-gradient-to-r from-slate-800 via-blue-900 to-slate-800 mx-auto mb-12" />
 
           <p className="text-lg md:text-xl text-gray-800 font-light leading-relaxed max-w-2xl mx-auto">
-            Discover our world-class boarding facilities designed to provide a 
-            warm, safe, and nurturing environment for academic and personal growth.
+            Discover our world-class boarding facilities designed to provide a
+            warm, safe, and nurturing environment for academic and personal
+            growth.
           </p>
         </div>
 

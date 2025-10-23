@@ -1,8 +1,7 @@
 import Gallery from "@/components/gallery/Gallery";
 import ArchitectureHero from "@/components/ui/other-hero";
-import React from "react";
 
-const page = () => {
+const GalleryPage = () => {
   return (
     <div>
       <div className="sticky top-0">
@@ -20,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default GalleryPage;

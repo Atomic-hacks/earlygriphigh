@@ -22,7 +22,7 @@ export default function About() {
   }, []);
 
   // Animation variants
-  const containerVariants:Variants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -34,7 +34,7 @@ export default function About() {
     },
   };
 
-  const fadeInUp:Variants = {
+  const fadeInUp: Variants = {
     hidden: {
       opacity: 0,
       y: 60,
@@ -49,7 +49,7 @@ export default function About() {
     },
   };
 
-  const fadeInLeft:Variants = {
+  const fadeInLeft: Variants = {
     hidden: {
       opacity: 0,
       x: -80,
@@ -64,7 +64,7 @@ export default function About() {
     },
   };
 
-  const fadeInRight:Variants = {
+  const fadeInRight: Variants = {
     hidden: {
       opacity: 0,
       x: 80,
@@ -79,7 +79,7 @@ export default function About() {
     },
   };
 
-  const scaleIn:Variants = {
+  const scaleIn: Variants = {
     hidden: {
       opacity: 0,
       scale: 0.8,
@@ -94,7 +94,7 @@ export default function About() {
     },
   };
 
-  const staggerContainer:Variants = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -105,7 +105,7 @@ export default function About() {
     },
   };
 
-  const slideInFromBottom:Variants = {
+  const slideInFromBottom: Variants = {
     hidden: {
       opacity: 0,
       y: 100,
@@ -120,7 +120,6 @@ export default function About() {
     },
   };
 
- 
   return (
     <div className="relative min-h-screen bg-white overflow-hidden">
       {/* Animated Background */}
@@ -235,7 +234,9 @@ export default function About() {
                     className="text-gray-700"
                     initial={{ opacity: 0, y: 20 }}
                     animate={
-                      isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                      isHeroInView
+                        ? { opacity: 1, y: 0 }
+                        : { opacity: 0, y: 20 }
                     }
                     transition={{ duration: 0.8, delay: 0.8 }}
                   >
@@ -392,11 +393,7 @@ export default function About() {
         ref={statsRef}
         className="relative py-20 bg-gradient-to-r from-blue-900 to-gray-800"
         initial={{ opacity: 0, y: 100 }}
-        animate={
-          isStatsInView
-            ? { opacity: 1, y: 0 }
-            : { opacity: 0, y: 100 }
-        }
+        animate={isStatsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <div className="max-w-6xl mx-auto px-8">
@@ -451,10 +448,7 @@ export default function About() {
                 >
                   {stat.number}
                 </motion.div>
-                <motion.div
-                  className="text-lg opacity-90"
-                  variants={fadeInUp}
-                >
+                <motion.div className="text-lg opacity-90" variants={fadeInUp}>
                   {stat.label}
                 </motion.div>
               </motion.div>
@@ -481,7 +475,11 @@ export default function About() {
             playsInline
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           >
             <source src="/sky4.mp4" type="video/mp4" />
           </motion.video>
@@ -507,7 +505,10 @@ export default function About() {
                 <motion.span
                   className="inline-block text-sm font-medium text-white/90 tracking-wider uppercase border border-white/30 px-4 py-2 rounded-full"
                   variants={scaleIn}
-                  whileHover={{ scale: 1.05, borderColor: "rgba(255,255,255,0.6)" }}
+                  whileHover={{
+                    scale: 1.05,
+                    borderColor: "rgba(255,255,255,0.6)",
+                  }}
                 >
                   Our Mission
                 </motion.span>

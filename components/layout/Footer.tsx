@@ -14,8 +14,6 @@ import {
   Trophy,
 } from "lucide-react";
 
-
-
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null);
   const [isFooterVisible, setIsFooterVisible] = useState(false);

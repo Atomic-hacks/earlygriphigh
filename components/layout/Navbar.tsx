@@ -34,17 +34,15 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Facilities", href: "/facilities" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "contact" },
-    { name: "LogIn", href: "login" },
+    { name: "Contact", href: "/contact" },
+    { name: "LogIn", href: "/login" },
   ];
 
   return (
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
-          isScrolled
-            ? "bg-neutral-800/25 backdrop-blur-xl "
-            : "bg-transparent"
+          isScrolled ? "bg-neutral-800/25 backdrop-blur-xl " : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16">
@@ -66,14 +64,14 @@ export default function Navbar() {
                       isScrolled ? "text-blue-400" : "text-white"
                     }`}
                   >
-                   EarlyGripHigh
+                    EarlyGripHigh
                   </span>
                   <span
                     className={`text-lg font-light tracking-wider transition-colors duration-500 ${
                       isScrolled ? "text-blue-400" : "text-white/80"
                     }`}
                   >
-                   School
+                    School
                   </span>
                 </div>
               </a>
@@ -101,9 +99,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`lg:hidden relative p-3 rounded-lg transition-all duration-500 ${
-                isScrolled
-                  ? "text-blue-800"
-                  : "text-white "
+                isScrolled ? "text-blue-800" : "text-white "
               }`}
             >
               <div className="flex flex-col space-y-1.5 w-6">
@@ -139,7 +135,7 @@ export default function Navbar() {
         }`}
       >
         {/* Background with subtle gradient */}
-        <div className="absolute inset-0 bg-blue-900/80 backdrop-blur-xl"/>
+        <div className="absolute inset-0 bg-blue-900/80 backdrop-blur-xl" />
 
         {/* Floating geometric elements */}
         <div className="absolute inset-0 overflow-hidden opacity-10">
@@ -204,8 +200,6 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
-
-           
           </div>
         </div>
       </div>

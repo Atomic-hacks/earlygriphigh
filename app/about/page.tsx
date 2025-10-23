@@ -2,9 +2,8 @@ import OurStory from "@/components/about/AboutSpark";
 import Contact from "@/components/about/ContactUs";
 import VisionSection from "@/components/about/OurMission";
 import ArchitectureHero from "@/components/ui/other-hero";
-import React from "react";
 
-const page = () => {
+const AboutPage = () => {
   return (
     <main>
       <div className="sticky top-0">
@@ -24,4 +23,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;
