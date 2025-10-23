@@ -111,7 +111,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </div>
             </div>
 
-            {/* Elegant Border Animation */}
+            {/*  Border Animation */}
             <div
               className={`absolute -z-50 inset-0 rounded-2xl border-2 border-transparent bg-gradient-to-r ${project.gradient} p-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
             >
@@ -166,7 +166,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <span className="text-sm font-light">{project.location}</span>
           </div>
 
-          {/* Premium CTA */}
+          {/*  CTA */}
           <div className="pt-4">
             <button className="group relative px-8 py-3 bg-transparent border rounded border-blue-600/30 text-blue-600 font-light text-base hover:border-blue-600 transition-all duration-500 overflow-hidden">
               <div className="absolute inset-0 bg-blue-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left"></div>

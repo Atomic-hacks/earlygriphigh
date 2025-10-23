@@ -146,7 +146,7 @@ export default function About() {
         />
       </motion.div>
 
-      {/* Premium Floating Elements */}
+      {/*  Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(5)].map((_, i) => (
           <motion.div

@@ -21,7 +21,7 @@ const Contact = () => {
     >
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content - Removed parallax temporarily */}
+          {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="w-16 h-px bg-blue-300"></div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 alt="house2"
               />
 
-              {/* Elegant overlay rectangles */}
+              {/*  overlay rectangles */}
               <div className="absolute inset-0">
                 {/* Main subtle overlay */}
                 <div className="absolute inset-0 bg-blue-900/20"></div>
@@ -69,7 +69,7 @@ const Contact = () => {
                 <div className="absolute top-8 left-8 w-24 h-24 border-2 border-white/30"></div>
                 <div className="absolute bottom-8 right-8 w-32 h-20 border-2 border-white/40"></div>
 
-                {/* Elegant corner accent */}
+                {/*  corner accent */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-white/20 to-transparent"></div>
 
                 {/* Bottom gradient fade */}
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Elegant border accent */}
+            {/*  border accent */}
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-blue-500  -z-10"></div>
           </div>
         </div>

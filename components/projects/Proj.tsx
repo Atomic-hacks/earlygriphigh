@@ -217,7 +217,7 @@ const Facilities: React.FC = () => {
           </p>
         </div>
 
-        {/* Premium Facilities Grid */}
+        {/* Facilities Grid */}
         <div className="space-y-16 md:space-y-24">
           {projects.map((project, index) => (
             <ProjectCard
