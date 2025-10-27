@@ -171,7 +171,7 @@ export default function Footer() {
               ].map((social) => (
                 <a
                   key={social.name}
-                  href="#"
+                  href={social.link}
                   className="group p-3 bg-white/5 border border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 backdrop-blur-sm"
                 >
                   <social.icon className="w-4 h-4 group-hover:text-blue-600 transition-colors duration-600" />
@@ -179,6 +179,7 @@ export default function Footer() {
               ))}
               <div className="p-3 bg-white/5 border border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 backdrop-blur-sm flex">
                 <img src="/whatsapp.svg" alt="whatsapp" className="size-4" />
+                <a href='wa.me/+23407079323077'/>
               </div>
             </div>
           </div>
