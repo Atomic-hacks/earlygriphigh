@@ -8,8 +8,8 @@ const FacilitiesPage = () => {
         <ArchitectureHero
           descriptionHeader="Our Facilities Speaks for themselves"
           title="Facilities"
-          description="At Eargrip High School, we provide more than just classrooms — we offer an environment designed for growth, creativity, and excellence. Our state-of-the-art facilities support learning, sports, technology, and the arts, giving students the space and tools to thrive. Explore our well-curated facilities, each one built to inspire achievement and nurture potential."
-          backgroundImage="/26.jpg"
+          description="At Earlygrip High School, we provide more than just classrooms — we offer an environment designed for growth, creativity, and excellence. Our state-of-the-art facilities support learning, sports, technology, and the arts, giving students the space and tools to thrive. Explore our well-curated facilities, each one built to inspire achievement and nurture potential."
+          backgroundImage="https://res.cloudinary.com/dl0krsagd/image/upload/v1762898387/21_klppav.jpg"
           titleId="hero-title"
           descriptionId="hero-description"
         />

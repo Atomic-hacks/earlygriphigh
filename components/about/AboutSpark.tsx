@@ -18,7 +18,7 @@ const OurStory: React.FC<OurStoryProps> = ({
   title = "Our Story",
   subtitle = "What Makes Us Special",
   description = "Welcome to EarlyGrip High School, where excellence meets nurturing care in education. Founded in 2017 and located on Pipeline Road Egbelu/Mgbarajah off Iwofe Road Port Harcourt, we are a full boarding mixed school dedicated to grooming the uniqueness of every child. Our environment stirs and develops the academic, spiritual and moral values of each student, making EGHS a true home away from home.",
-  image = "/28.jpg",
+  image = "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898386/28_rdemy4.jpg",
   features = [
     { title: "World-Class Education", icon: BookOpen },
     { title: "Innovative Educators", icon: Users },
@@ -233,7 +233,9 @@ const OurStory: React.FC<OurStoryProps> = ({
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className={`flex items-center space-x-3 group hover:translate-x-2 transition-all duration-200 delay-${800 + index * 100} ${
+                    className={`flex items-center space-x-3 group hover:translate-x-2 transition-all duration-200 delay-${
+                      800 + index * 100
+                    } ${
                       isVisible
                         ? "opacity-100 translate-x-0 scale-100"
                         : "opacity-0 -translate-x-5 scale-95"
@@ -283,7 +285,9 @@ const OurStory: React.FC<OurStoryProps> = ({
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className={`flex items-start space-x-3 hover:translate-x-2 transition-all duration-200 delay-${1100 + index * 100} ${
+                    className={`flex items-start space-x-3 hover:translate-x-2 transition-all duration-200 delay-${
+                      1100 + index * 100
+                    } ${
                       isVisible
                         ? "opacity-100 translate-x-0"
                         : "opacity-0 -translate-x-5"
@@ -291,9 +295,9 @@ const OurStory: React.FC<OurStoryProps> = ({
                     style={{ transitionDelay: `${1100 + index * 100}ms` }}
                   >
                     <div
-                      className={`w-2 h-2 bg-blue-700 rounded-full mt-2 flex-shrink-0 hover:scale-150 transition-all duration-300 delay-${1200 + index * 100} ${
-                        isVisible ? "scale-100" : "scale-0"
-                      }`}
+                      className={`w-2 h-2 bg-blue-700 rounded-full mt-2 flex-shrink-0 hover:scale-150 transition-all duration-300 delay-${
+                        1200 + index * 100
+                      } ${isVisible ? "scale-100" : "scale-0"}`}
                       style={{ transitionDelay: `${1200 + index * 100}ms` }}
                     />
                     <p className="text-gray-700 leading-relaxed">

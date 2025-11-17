@@ -48,7 +48,7 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[] = [
     {
       id: "1",
-      src: "/scl1.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898422/scl11_msshwt.jpg",
       title: "Main School Building",
       category: "school",
       description: "Front view of the school’s main building",
@@ -72,7 +72,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "4",
-      src: "/scl14.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898435/scl14_efzubl.jpg",
       title: "Students in Class",
       category: "academics",
       description: "Interactive learning session with students in class",
@@ -80,7 +80,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "5",
-      src: "/scl4.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898442/scl4_jipmzt.jpg",
       title: "School Entrance",
       category: "school",
       description: "Neat and well-maintained entrance to the school compound",
@@ -88,7 +88,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "6",
-      src: "/scl2.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898437/scl12_ioipmf.jpg",
       title: "Outdoor Corridor",
       category: "school",
       description: "Walkway connecting the classrooms and offices",
@@ -96,7 +96,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "7",
-      src: "/scl6.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898412/scl6_q0t63m.jpg",
       title: "Students Gathering",
       category: "school life",
       description: "Students chatting and relaxing during break time",
@@ -104,7 +104,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "8",
-      src: "/scl17.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898442/scl17_m1t4l4.jpg",
       title: "School Assembly Ground",
       category: "school",
       description: "Open assembly area used for morning gatherings",
@@ -112,7 +112,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "9",
-      src: "/scl9.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898420/scl9_jgdup4.jpg",
       title: "Inside the Classroom",
       category: "academics",
       description: "Students paying attention during a lecture",
@@ -120,15 +120,15 @@ const Gallery: React.FC = () => {
     },
     {
       id: "10",
-      src: "/scl18.jpg",
-      title: "Staff Office Block",
+      src: "/https://res.cloudinary.com/dl0krsagd/image/upload/v1762898442/scl18_lfrdbe.jpg",
+      title: "Student performing practicals",
       category: "school",
-      description: "Administrative block housing the teachers’ offices",
+      description: "Chemistry practicals being performed by a student",
       date: "2025",
     },
     {
       id: "11",
-      src: "/scl6.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898442/scl6_jqvzjl.jpg",
       title: "Students Walking Across Campus",
       category: "school life",
       description: "Students heading to class in the morning",
@@ -136,7 +136,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "12",
-      src: "/scl5.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898437/scl15_dgzly7.jpg",
       title: "Side View of School Building",
       category: "school",
       description: "Architectural side view of the main classroom block",
@@ -144,7 +144,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "13",
-      src: "/scl13.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898430/scl13_akizef.jpg",
       title: "Students Reading",
       category: "academics",
       description: "Quiet reading time between lectures",
@@ -153,7 +153,7 @@ const Gallery: React.FC = () => {
 
     {
       id: "14",
-      src: "/scl14.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898405/scl4_ahkchs.jpg",
       title: "Students Group Photo",
       category: "school life",
       description: "Group of students posing on campus",
@@ -161,7 +161,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: "15",
-      src: "/scl16.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898440/scl16_zeczsa.jpg",
       title: "Modern Classroom Design",
       category: "academics",
       description: "Bright and spacious classroom setup for learning",
@@ -170,7 +170,7 @@ const Gallery: React.FC = () => {
 
     {
       id: "16",
-      src: "/scl8.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898428/scl8_jii71a.jpg",
       title: "Students revising",
       category: "school life",
       description: "Happy students sharing a moment between classes",
@@ -179,7 +179,7 @@ const Gallery: React.FC = () => {
 
     {
       id: "17",
-      src: "/scl10.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898419/scl10_oxiy4h.jpg",
       title: "Students Revising Notes",
       category: "academics",
       description: "Students reviewing materials before class",
@@ -188,7 +188,7 @@ const Gallery: React.FC = () => {
 
     {
       id: "18",
-      src: "/scl3.jpg",
+      src: "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898399/scl3_frahml.jpg",
       title: "Front Yard View",
       category: "school",
       description: "Front compound showing the main entrance and walkway",
@@ -370,7 +370,9 @@ const Gallery: React.FC = () => {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className={`group relative overflow-hidden rounded cursor-pointer transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl delay-${900 + index * 100} ${
+              className={`group relative overflow-hidden rounded cursor-pointer transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl delay-${
+                900 + index * 100
+              } ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-12"
@@ -382,9 +384,9 @@ const Gallery: React.FC = () => {
               <div className="aspect-[4/3] relative overflow-hidden">
                 {/* Blue accent border */}
                 <div
-                  className={`absolute -left-1 top-0 w-1 bg-gradient-to-b from-blue-700 to-blue-900 transition-all duration-1000 delay-${1100 + index * 100} ${
-                    isVisible ? "h-full opacity-100" : "h-0 opacity-0"
-                  }`}
+                  className={`absolute -left-1 top-0 w-1 bg-gradient-to-b from-blue-700 to-blue-900 transition-all duration-1000 delay-${
+                    1100 + index * 100
+                  } ${isVisible ? "h-full opacity-100" : "h-0 opacity-0"}`}
                 />
 
                 <img
@@ -440,7 +442,9 @@ const Gallery: React.FC = () => {
             ].map((stat, index) => (
               <div
                 key={index}
-                className={`text-center transition-all duration-600 delay-${1600 + index * 100} ${
+                className={`text-center transition-all duration-600 delay-${
+                  1600 + index * 100
+                } ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-6"

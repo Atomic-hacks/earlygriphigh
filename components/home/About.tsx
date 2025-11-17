@@ -316,7 +316,7 @@ export default function About() {
               >
                 <div className="relative overflow-hidden shadow-2xl">
                   <motion.img
-                    src="/29.jpg"
+                    src="/29.jpghttps://res.cloudinary.com/dl0krsagd/image/upload/v1762898386/29_d1mb7v.jpg"
                     alt="Earlygrip High School Campus"
                     className="w-full h-auto"
                     style={{

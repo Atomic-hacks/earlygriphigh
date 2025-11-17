@@ -11,7 +11,7 @@ const AboutPage = () => {
           descriptionHeader="Broad Vision. Exceptional Learning. Lasting Impact"
           title="About"
           description="Our mission, both then and now, is to provide quality education while upholding the highest standards of integrity, professionalism, and student success."
-          backgroundImage="/26.jpg"
+          backgroundImage="https://res.cloudinary.com/dl0krsagd/image/upload/v1762898387/21_klppav.jpg"
           titleId="hero-title"
           descriptionId="hero-description"
         />

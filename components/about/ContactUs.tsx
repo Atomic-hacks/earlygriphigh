@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="/29.jpg"
+                src="https://res.cloudinary.com/dl0krsagd/image/upload/v1762898386/29_d1mb7v.jpg"
                 alt="house2"
               />
 

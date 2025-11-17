@@ -50,7 +50,8 @@ export default function VisionSection(): JSX.Element {
         "At EarlyGrip High School, our vision is to be a leading educational institution that nurtures the uniqueness of every child, developing their academic, spiritual, and moral values in an environment that feels like home away from home.",
       detail:
         "We strive to create well-educated and well-rounded young ladies and gentlemen who will become accomplished, well-informed future leaders of tomorrow.",
-      image: "/29.jpg",
+      image:
+        "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898386/29_d1mb7v.jpg",
       imageAlt: "Students engaged in learning",
     },
     {
@@ -61,7 +62,8 @@ export default function VisionSection(): JSX.Element {
         "Our mission is to deliver impeccable world-class education using innovative and model educators who understand the importance of sound education.",
       detail:
         "We are driven by a passion for grooming each child's uniqueness, ensuring comprehensive development through structured policies, curriculum, and extra-curricular activities that showcase international standards.",
-      image: "/21.jpg",
+      image:
+        "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898387/21_klppav.jpg",
       imageAlt: "Modern school facilities",
     },
     {
@@ -72,7 +74,8 @@ export default function VisionSection(): JSX.Element {
         "We understand that music opens the mind to better understanding, exposing students to various musical instruments including organ, violin, flutes, and drums.",
       detail:
         "Safety is paramount in creating our home-away-from-home atmosphere. Our safety structures promote learning and growth within the framework that develops confident, capable students ready for their future endeavors.",
-      image: "/23.jpg",
+      image:
+        "https://res.cloudinary.com/dl0krsagd/image/upload/v1762898388/23_o7ubps.jpg",
       imageAlt: "Students in music class",
     },
   ];
@@ -188,9 +191,9 @@ export default function VisionSection(): JSX.Element {
                   <div className="aspect-[4/3] relative">
                     {/* Blue accent border */}
                     <div
-                      className={`absolute -left-2 top-0 w-1 bg-gradient-to-b from-blue-800/80 to-blue-900 transition-all duration-1000 delay-${1000 + index * 200} ${
-                        isVisible ? "h-full opacity-100" : "h-0 opacity-0"
-                      }`}
+                      className={`absolute -left-2 top-0 w-1 bg-gradient-to-b from-blue-800/80 to-blue-900 transition-all duration-1000 delay-${
+                        1000 + index * 200
+                      } ${isVisible ? "h-full opacity-100" : "h-0 opacity-0"}`}
                     />
 
                     <img
@@ -208,7 +211,9 @@ export default function VisionSection(): JSX.Element {
 
                     {/* Educational icon accent */}
                     <div
-                      className={`absolute top-6 right-6 transition-all duration-600 delay-${1200 + index * 200} ${
+                      className={`absolute top-6 right-6 transition-all duration-600 delay-${
+                        1200 + index * 200
+                      } ${
                         isVisible
                           ? "opacity-100 scale-100"
                           : "opacity-0 scale-0"
@@ -223,7 +228,9 @@ export default function VisionSection(): JSX.Element {
 
                     {/* School info overlay */}
                     <div
-                      className={`absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-md rounded p-3 border border-white/20 transition-all duration-600 delay-${1400 + index * 200} hover:scale-105 ${
+                      className={`absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-md rounded p-3 border border-white/20 transition-all duration-600 delay-${
+                        1400 + index * 200
+                      } hover:scale-105 ${
                         isVisible
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 translate-y-4"
@@ -247,7 +254,9 @@ export default function VisionSection(): JSX.Element {
                 >
                   {/* Card number and subtitle */}
                   <div
-                    className={`flex items-center space-x-6 transition-all duration-600 delay-${800 + index * 200} ${
+                    className={`flex items-center space-x-6 transition-all duration-600 delay-${
+                      800 + index * 200
+                    } ${
                       isVisible
                         ? "opacity-100 translate-x-0"
                         : "opacity-0 -translate-x-8"
@@ -257,14 +266,14 @@ export default function VisionSection(): JSX.Element {
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <div
-                      className={`bg-gray-200 group-hover:bg-blue-400 h-px transition-all duration-300 delay-${1000 + index * 200} ${
-                        isVisible ? "w-8" : "w-0"
-                      }`}
+                      className={`bg-gray-200 group-hover:bg-blue-400 h-px transition-all duration-300 delay-${
+                        1000 + index * 200
+                      } ${isVisible ? "w-8" : "w-0"}`}
                     />
                     <span
-                      className={`text-sm font-medium text-blue-700 tracking-[0.15em] uppercase transition-opacity duration-600 delay-${1200 + index * 200} ${
-                        isVisible ? "opacity-100" : "opacity-0"
-                      }`}
+                      className={`text-sm font-medium text-blue-700 tracking-[0.15em] uppercase transition-opacity duration-600 delay-${
+                        1200 + index * 200
+                      } ${isVisible ? "opacity-100" : "opacity-0"}`}
                     >
                       {item.subtitle}
                     </span>
@@ -272,7 +281,9 @@ export default function VisionSection(): JSX.Element {
 
                   {/* Title */}
                   <h3
-                    className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight tracking-tight group-hover:from-blue-800/80 group-hover:to-blue-900 group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 delay-${900 + index * 200} ${
+                    className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight tracking-tight group-hover:from-blue-800/80 group-hover:to-blue-900 group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 delay-${
+                      900 + index * 200
+                    } ${
                       isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-6"
@@ -283,7 +294,9 @@ export default function VisionSection(): JSX.Element {
 
                   {/* Description */}
                   <p
-                    className={`text-base sm:text-lg text-gray-600 leading-relaxed font-light transition-all duration-600 delay-${1100 + index * 200} ${
+                    className={`text-base sm:text-lg text-gray-600 leading-relaxed font-light transition-all duration-600 delay-${
+                      1100 + index * 200
+                    } ${
                       isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-6"
@@ -294,7 +307,9 @@ export default function VisionSection(): JSX.Element {
 
                   {/* Detail text */}
                   <p
-                    className={`text-base text-gray-700 leading-relaxed font-light border-l-2 border-gray-200 pl-6 group-hover:border-blue-400 transition-all duration-300 delay-${1200 + index * 200} ${
+                    className={`text-base text-gray-700 leading-relaxed font-light border-l-2 border-gray-200 pl-6 group-hover:border-blue-400 transition-all duration-300 delay-${
+                      1200 + index * 200
+                    } ${
                       isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-6"
@@ -306,7 +321,9 @@ export default function VisionSection(): JSX.Element {
                   {/* Educational highlights for specific cards */}
                   {item.id === "mission" && (
                     <div
-                      className={`bg-blue-50/50 rounded p-4 border-l-4 border-blue-700 hover:translate-x-2 hover:border-l-6 transition-all duration-300 delay-${1300 + index * 200} ${
+                      className={`bg-blue-50/50 rounded p-4 border-l-4 border-blue-700 hover:translate-x-2 hover:border-l-6 transition-all duration-300 delay-${
+                        1300 + index * 200
+                      } ${
                         isVisible
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 translate-y-6"
@@ -336,7 +353,9 @@ export default function VisionSection(): JSX.Element {
 
                   {item.id === "approach" && (
                     <div
-                      className={`bg-blue-50/50 rounded p-4 border-l-4 border-blue-800/80 hover:translate-x-2 hover:border-l-6 transition-all duration-300 delay-${1300 + index * 200} ${
+                      className={`bg-blue-50/50 rounded p-4 border-l-4 border-blue-800/80 hover:translate-x-2 hover:border-l-6 transition-all duration-300 delay-${
+                        1300 + index * 200
+                      } ${
                         isVisible
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 translate-y-6"
@@ -368,7 +387,9 @@ export default function VisionSection(): JSX.Element {
 
                   {/* Hover indicator */}
                   <div
-                    className={`flex items-center space-x-4 pt-4 transition-all duration-600 delay-${1400 + index * 200} ${
+                    className={`flex items-center space-x-4 pt-4 transition-all duration-600 delay-${
+                      1400 + index * 200
+                    } ${
                       isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-6"
@@ -383,9 +404,9 @@ export default function VisionSection(): JSX.Element {
               {/* Separator line */}
               {index < visionItems.length - 1 && (
                 <div
-                  className={`mt-12 md:mt-16 lg:mt-20 transition-all duration-300 delay-${1700 + index * 200} ${
-                    isVisible ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`mt-12 md:mt-16 lg:mt-20 transition-all duration-300 delay-${
+                    1700 + index * 200
+                  } ${isVisible ? "opacity-100" : "opacity-0"}`}
                 >
                   <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
                 </div>
